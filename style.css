@@ -1,0 +1,23 @@
+.images_box{
+    width: 1200px;
+    height: 750px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+}
+.images_box>img{
+    position: absolute;
+    transition: all 0.3s;
+    top: 0;
+}
+img.current{
+   transform: translateX(0);
+   z-index: 1;
+}
+img.leave{
+    transform: translateX(-100%);
+    z-index: 1;
+}
+img.enter{
+    transform: translateX(100%);
+}
